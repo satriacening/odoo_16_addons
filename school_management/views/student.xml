@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <record id="student_detail_action" model="ir.actions.act_window">
+        <field name="name">Student Detail</field>
+        <field name="res_model">student.detail</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem
+            id="school_parent"
+            name="School"
+            web_icon="school_management,static/description/icon.png"
+            sequence="25">
+        <menuitem id="school_detail_tree_view"
+                  name="List Student"
+                  sequence="2"
+                  action="student_detail_action"/>
+        </menuitem>
+</odoo>
