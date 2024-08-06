@@ -6,6 +6,7 @@ class Mahasiswa(models.Model):
     name = fields.Char(string="Name")
     age = fields.Integer(string="Age")
     address = fields.Char(string="Address")
+    ktp = fields.Char("KTP")
     gender = fields.Selection(
         selection=[
             ('male', 'Male'),
